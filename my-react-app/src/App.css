@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.display-card {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: aqua;
+}
+
+.display-card:hover {
+  cursor: pointer;
+}
