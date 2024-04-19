@@ -78,11 +78,11 @@
   gap: 1rem;
 }
 
-.card-container {
+/* .card-container {
   width: 300px;
   height: 200px;
   perspective: 1000px;
-}
+} */
 
 .card-content {
   width: 100%;
@@ -92,9 +92,26 @@
   transition: transform 0.999s;
 }
 
-.card-container:hover .card-content {
+.card-content:hover {
+  cursor: pointer;
+}
+
+.flip-card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-card.flipped {
   transform: rotateY(180deg);
 }
+
+/* .card-container:hover .card-content {
+  transform: rotateY(180deg);
+} */
 
 .card-front,
 .card-back {

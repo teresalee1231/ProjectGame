@@ -2,16 +2,24 @@ import {useState} from 'react';
 
 function Flashcard() {
 
-  // const[isFlipped, setFlipped] = useState(false)
+  const[isFlipped, setFlipped] = useState(false);
 
-  // const handleFlip = () => {
-
-  // }
+  const handleFlip = () => {
+    setFlipped(!isFlipped)
+  };
 
   return(
     <>
     <div className="card-container">
-      <div className="card-content">
+
+      <div
+          onClick={handleFlip}
+          className={`flip-card ${
+              isFlipped ? "flipped" : ""
+          }`}
+      >
+
+        <div className="card-content">
           <div className="card-front">
             {/* props.title */}
             <h1>Title</h1>
@@ -22,6 +30,11 @@ function Flashcard() {
           </div>
         </div>
       </div>
+
+
+      </div>
+
+
 
     </>
   )
