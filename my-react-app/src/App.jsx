@@ -6,6 +6,7 @@ import Card from './components/Card'
 import Navbar from './components/Navbar'
 import Section from './components/Section'
 import Flashcard from './components/Flashcard'
+import StudyPage from './pages/StudyPage'
 function App() {
 
 
@@ -22,6 +23,8 @@ function App() {
 
           <Flashcard />
       </div>
+
+      <StudyPage />
     </>
   )
 }
