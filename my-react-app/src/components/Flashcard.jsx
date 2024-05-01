@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import {useState} from 'react';
 
-function Flashcard() {
+function Flashcard(props) {
 
   const[isFlipped, setFlipped] = useState(false);
 
@@ -23,10 +24,12 @@ function Flashcard() {
           <div className="card-front">
             {/* props.title */}
             <h1>Title</h1>
+            <p>{props.number}</p>
           </div>
           <div className="card-back">
             {/* props.body or something */}
             <p>content</p>
+            <p>{props.number}</p>
           </div>
         </div>
       </div>
@@ -39,5 +42,10 @@ function Flashcard() {
     </>
   )
 }
+
+Flashcard.propTypes = {
+  number: PropTypes.number
+};
+
 
 export default Flashcard
