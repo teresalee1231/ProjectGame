@@ -20,8 +20,6 @@ function App() {
          <Section
           title="Cards"
           />
-
-          <Flashcard />
       </div>
 
       <StudyPage />

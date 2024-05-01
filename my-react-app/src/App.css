@@ -78,11 +78,12 @@
   gap: 1rem;
 }
 
-/* .card-container {
-  width: 300px;
+.card-container {
+  display: flex;
+  /* width: 300px;
   height: 200px;
-  perspective: 1000px;
-} */
+  perspective: 1000px; */
+}
 
 .card-content {
   width: 100%;
@@ -97,8 +98,8 @@
 }
 
 .flip-card {
-  width: 300px;
-  height: 200px;
+  width: 700px;
+  height: 500px;
   perspective: 1000px;
   position: relative;
   transform-style: preserve-3d;

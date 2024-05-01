@@ -1,3 +1,4 @@
+import { IconContext } from "react-icons";
 import { BsCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 import Flashcard from "../components/Flashcard";
 import "./StudyPage.css";
@@ -16,14 +17,19 @@ function StudyPage() {
   return (
     <>
     <div className="study-page">
+      <h1>TOPIC TOP</h1>
       <Flashcard />
-      <div>hi</div>
-      <BsCaretLeftFill
-       onClick={left}
-      />
-      <BsFillCaretRightFill
-       onClick={right}
-      />
+      <div className="test2">
+        <IconContext.Provider value={{ className: "test"}}>
+          <BsCaretLeftFill
+          onClick={left}
+          />
+          <BsFillCaretRightFill
+          onClick={right}
+          />
+        </IconContext.Provider>
+      </div>
+
     </div>
 
 
