@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Section from './components/Section'
 import Flashcard from './components/Flashcard'
 import StudyPage from './pages/StudyPage'
+import PlusButton from './components/PlusButton'
 function App() {
 
 
@@ -14,12 +15,24 @@ function App() {
     <>
       <Navbar />
       <div className='content'>
-        <Section
-          title="test title"
-         />
-         <Section
-          title="Cards"
-          />
+        {/* fix something later */}
+        <div className="sec">
+          <h1>Pinned Cards</h1>
+          <div className="cards">
+            <Card />
+            <Card />
+          </div>
+        </div>
+        <div className="sec">
+          <h1>Cards</h1>
+          <div className="cards">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <PlusButton />
+          </div>
+        </div>
       </div>
 
       <StudyPage />

@@ -19,6 +19,13 @@ function StudyPage() {
   return (
     <>
     <div className="study-page">
+      <div>
+        <select>
+          <option value="1">Title 1</option>
+          <option value="2">Title 2</option>
+          <option value="3">Title 3</option>
+        </select>
+      </div>
       <h1>TOPIC TOP</h1>
       <Flashcard
         number= {counter}
